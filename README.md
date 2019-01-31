@@ -42,6 +42,8 @@ $('#users').tablify(options);
 ```
 
 The above example will produce:
+
+
 | Name                     | Occupation        |
 |--------------------------|-------------------|
 | Phillip J. Fry           | Delivery Boy      |
