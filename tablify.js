@@ -26,7 +26,6 @@
                 index = i;
             }
         }
-        console.log(`Index with most keys: ${index} with ${max}`)
         return index;
     }
 
