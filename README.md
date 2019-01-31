@@ -1,6 +1,6 @@
 # jQuery Tablify
 
-Simple jQuery plugin that fills contents of an HTML table with JSON or JS array data. 
+Simple jQuery plugin that fills a HTML table with JSON or JS array data. Useful for REST APIs that return tabular data in JSON format. Object property names become table headers.
 
 ## Usage
 
@@ -17,12 +17,13 @@ $('#users').tablify(options);
 ```
 
 ### Options
- - `data`: JSON or JS array (required)
+ - `data`: JSON object or JS array (required)
  - `capitalize`: will capitalize header items (default true)
  - `uppercase`: will uppercase header names (default false) (overrides capitalize)
 
 
 ## Examples
+
 ```html
 
 <table id='users'>
@@ -36,7 +37,7 @@ $('#users').tablify(options);
             {name: 'Turanga Leela', occupation: 'Spaceship Captain'}
         ];
         
-        $('#users').tablify({ data: users});
+        $('#users').tablify({ data: users });
     });
 </script>
 ```
@@ -51,3 +52,6 @@ The above example will produce:
 | Turanga Leela            | Spaceship Captain |
 
 
+## Caveats 
+
+`data` needs to be in a tabular format (i.e. no nested arrays, objects, etc.)
